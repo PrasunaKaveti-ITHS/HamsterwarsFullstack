@@ -1,64 +1,63 @@
 .App {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  background: linear-gradient(to right, #ccffff, #ebf8e1, #ffcc99);
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	background: linear-gradient(to right, #ccffff, #ebf8e1, #ffcc99);
 }
-.App-logo{
-  width:  calc(10vh + 2vmin);;
-  height:  calc(10vh + 2vmin);;
-  border-radius: 6vh;
-  border: 1px solid royalblue;
-  margin-top: -1.2vh;
-  margin-left: -10vh;
-  margin-bottom: -1.5vh;
+.App-logo {
+	width: calc(10vh + 2vmin);
+	height: calc(10vh + 2vmin);
+	border-radius: 6vh;
+	border: 1px solid royalblue;
+	margin-top: -1.2vh;
+	margin-left: -10vh;
+	margin-bottom: -1.5vh;
 }
 .App-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(2vh + 3vmin);
-  background-color: #404040;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-size: calc(2vh + 3vmin);
+	background-color: #404040;
 }
 
 .App-link {
-  color: #61cffb;
+	color: #61cffb;
 }
 
 header {
-    color: #2d3d3b;
-    padding: 0.5em;
-    flex: 0 0 auto;
+	color: #2d3d3b;
+	padding: 0.5em;
+	flex: 0 0 auto;
 }
 nav a {
-    padding: 0.3em 1.5em;
-    color: #ffcc00;
-    transition: background-color 0.3s linear;
-    text-decoration: none;
+	padding: 0.3em 1.5em;
+	color: #ffcc00;
+	transition: background-color 0.3s linear;
+	text-decoration: none;
 }
 nav a:hover {
-  background-size: cover;
-
+	background-size: cover;
 }
 
 nav a.active {
-    font-weight: bold;
+	font-weight: bold;
+	color: #cc3366;
 }
 
 main {
-    overflow: auto;
+	overflow: auto;
 }
 
-.foot{
-  border-top: 1px solid #f2f2f2;
-padding: 0.5em;
-background-color: #434343;
-
+.foot {
+	border-top: 1px solid #f2f2f2;
+	padding: 1em;
+	background-color: #434343;
 }
 
-.foot p{
-  color: #f2f2f2;
-  font-size: 0.6em;
-  letter-spacing: 0.3vh;
+.foot p {
+	color: #f2f2f2;
+	font-size: 0.7em;
+	letter-spacing: 0.3vh;
 }

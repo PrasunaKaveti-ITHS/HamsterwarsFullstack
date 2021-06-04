@@ -10,22 +10,7 @@ const Hamsters = ({ hamster }) => {
       setState({ status: "Delete successful" }));
     alert("Hamster deleted succesfully")
   }
-/*
-  async function matchWinners(id) {
-    const response = await fetch(`/api/matchWinners/${id}`, { method: 'GET' })
 
-    const text = await response.text()
-    try {
-      const data = JSON.parse(text)
-      setWinnerHamsters(data)
-      console.log(winnerHamsters)
-    }
-    catch {
-      console.log("Hamster has no winning matches ")
-      setMessage("Hamster has no winning matches")
-
-    }
-*/
     function changeSelect() {
       if (selectedItem) {
         setSelectedItem("");
