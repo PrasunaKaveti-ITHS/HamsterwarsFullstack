@@ -1,0 +1,35 @@
+.hamster-pic {
+    width: 10vh;
+	height: 20vh;
+	border-color: #993333;
+	border-width: 3px;
+	border-style: ridge;
+	outline: 2px solid #212121;
+  padding: 10px;
+  }
+ 
+  .home-container {
+    height: 100vh;
+    width: 100%;
+    top: 2vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  h3 {
+    font-size: 1.5em;
+   font-family: 'Poppins', sans-serif;
+  }
+
+  .home-container h1 {
+  font-family: 'Poppins', sans-serif;
+  color: green;
+  font-size: 3em;
+  }
+  
+  .home-container h2 {
+    font-family: 'Poppins', sans-serif;
+    color: #cc0066;
+    font-size: 2em;
+    }

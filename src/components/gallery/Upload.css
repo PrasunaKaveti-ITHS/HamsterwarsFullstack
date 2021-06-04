@@ -1,0 +1,88 @@
+.Form {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    font-size: 1em;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 2%;
+    background-color: white;
+    color: black;
+    padding: 5em;
+    text-align: left;
+    margin: auto;
+}
+
+.Form button {
+    cursor: pointer;
+    color: white;
+    background-color: black;
+    font-size: 1.5em;
+    padding-top: 5px;
+    border-radius: 0.5em;
+    margin-top: 2em;
+    width: 50%;
+    height: 50px;
+    margin: auto;
+    transition: all 0.5s;
+    background-color: #A7C7E7;
+}
+
+form>div {
+    margin-top: 1em;
+    margin-bottom: 2em;
+}
+
+form input {
+    padding: 10px 12px;
+    margin: 10px 5px;
+    display: inline-block;
+    width: 100%;
+    font-size: 1.2em;
+    border-radius: 0.3em;
+    border-width: 2px;
+    clear: both;
+}
+
+form label {
+    
+    font-weight: bold;
+    font-size: 1em;
+    padding-left: 0.5em;
+}
+
+input.valid {
+    border: 3px solid #5BBE36;
+    border-radius: 5px;
+}
+
+input.invalid {
+    border: 3px solid #DD2626;
+    border-radius: 5px;
+}
+
+.error {
+    color: #DD2626;
+}
+
+button.primary {
+    padding: 0.3em 1.5em;
+    margin-bottom: 0.7em;
+    border: none;
+    border-radius: 5px;
+    background-color: #6495ED;
+    color: white;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+button:hover {
+    cursor: pointer;
+    letter-spacing: 0.05em;
+    transform: scale(1.2, 1.2);
+}
+
+button:disabled {
+    background-color: #0047AB;
+    color: #f7efef;
+    cursor: auto;
+}

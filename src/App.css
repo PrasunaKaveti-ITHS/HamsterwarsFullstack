@@ -1,49 +1,64 @@
 .App {
   text-align: center;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
+  background: linear-gradient(to right, #ccffff, #ebf8e1, #ffcc99);
 }
-
+.App-logo{
+  width:  calc(10vh + 2vmin);;
+  height:  calc(10vh + 2vmin);;
+  border-radius: 6vh;
+  border: 1px solid royalblue;
+  margin-top: -1.2vh;
+  margin-left: -10vh;
+  margin-bottom: -1.5vh;
+}
 .App-header {
-  /* background-color: #282c34; */
-  /* min-height: 100vh; */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-size: calc(2vh + 3vmin);
+  background-color: #404040;
 }
 
 .App-link {
-  color: #61dafb;
+  color: #61cffb;
 }
 
 header {
-    background-color: #8AD2C0;
-    color: #3B4E49;
+    color: #2d3d3b;
     padding: 0.5em;
     flex: 0 0 auto;
 }
 nav a {
-    padding: 0.2em 1.5em;
-    color: #3B4E49;
+    padding: 0.3em 1.5em;
+    color: #ffcc00;
     transition: background-color 0.3s linear;
     text-decoration: none;
 }
 nav a:hover {
-    background-color: #4BAF95;
+  background-size: cover;
+
 }
-/* nav a:active {
-    transform: translateY(-2px);
-} */
+
 nav a.active {
     font-weight: bold;
 }
 
 main {
-    background-color: #B5E5D9;
-    color: #3B4E49;
-    flex: 1 1 auto;
+    overflow: auto;
+}
+
+.foot{
+  border-top: 1px solid #f2f2f2;
+padding: 0.5em;
+background-color: #434343;
+
+}
+
+.foot p{
+  color: #f2f2f2;
+  font-size: 0.6em;
+  letter-spacing: 0.3vh;
 }

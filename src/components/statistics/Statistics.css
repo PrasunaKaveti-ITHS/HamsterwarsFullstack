@@ -1,0 +1,55 @@
+.statWrapper {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin: auto;
+	height: 100vh;
+	align-content: center;
+	padding: 50px;
+}
+
+li {
+	list-style: none;
+	text-align: center;
+	line-height: 50px;
+	font-size: 18px;
+	color: blue;
+	font-family: 'Lora', serif;
+    padding-bottom: 20px;
+}
+
+span {
+	color: green;
+}
+
+ol {
+	border-radius: 2em;
+	outline: none;
+	height: 50vh;
+	align-self: start;
+	margin-left: auto;
+	padding-inline-start: 0px;
+}
+
+.divider {
+	width: 2px;
+	height: 260vh;
+    margin: 1px 0;
+	background: blue;
+	border-right: 2px solid red;
+	border-left: 3px dotted white;
+}
+
+h1 {
+	line-height: 90px;
+	color: #ff1d58;
+	font-family: 'Signika', sans-serif;
+}
+.stat-image {
+	width: 45%;
+	height: 30vh;
+	border-color: #993333;
+	border-width: 3px;
+	border-style: ridge;
+	outline: 2px dotted #000000;
+}

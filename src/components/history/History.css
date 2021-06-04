@@ -1,0 +1,20 @@
+.history-wrapper {
+    display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin: auto;
+	height: 100vh;
+	align-content: center;
+	padding: 50px;
+}
+
+.history-image {
+    width: 20vh;
+    height: 20vh;
+    border-radius: 12px;
+    border: 1px solid ;
+    background-color: yellow;
+    padding: 5px;
+
+}
+
