@@ -20,7 +20,9 @@ function App() {
 			setHamsters(data)
 			// OBS! Bättre att hämta datan i App-komponenten, eftersom den alltid är MOUNTED
 		}
+    
 		get()
+
 	}, [])
   return (
     <Router>
@@ -43,7 +45,8 @@ function App() {
           <Switch>
 
             <Route path="/battle"> <Battle /></Route>
-            <Route path="/gallery"> <Gallery hamsterList={hamsters} /></Route>
+            <Route path="/gallery"> <Gallery hamsterList={hamsters} />
+            </Route>
             <Route path="/stats"> <Statistics /></Route>
             <Route path="/history"> <History /></Route>
             <Route path="/upload"> <Upload/></Route>

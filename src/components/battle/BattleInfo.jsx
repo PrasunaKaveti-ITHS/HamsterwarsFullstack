@@ -54,7 +54,8 @@ const BattleInfo = ({ hamster1, hamster2, fetchData }) => {
 
     function popUp() {
         setShowPopUp(true);
-        setTimeout(setShowPopUp, 7000);
+        setTimeout(setShowPopUp, 2000);
+        setTimeout(fetchData(), 7000);
     }
 
     return (

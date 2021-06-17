@@ -1,26 +1,28 @@
 import "./Gallery.css";
-import { useState } from "react";
+import { useState} from "react";
 
 const Hamsters = ({ hamster }) => {
-  const [state, setState] = useState("");
   const [selectedItem, setSelectedItem] = useState("");
-   
+  const [hamsterDeleted, setHamsterDeleted] = useState("");
+
   async function deleteHamster(id) {
-    await fetch(`/api/hamsters/${id}`, { method: "DELETE" }).then(() =>
-      setState({ status: "Delete successful" }));
-    alert("Hamster deleted succesfully")
+    await fetch(`/api/hamsters/${id}`, { method: "DELETE" });
+    setHamsterDeleted(`${hamster.name} is removed successfully`);
+    
   }
 
     function changeSelect() {
-      if (selectedItem) {
+      if (selectedItem){
         setSelectedItem("");
+    
       } else setSelectedItem(hamster.id);
     }
 
     const showHamsters = (
       <div>
-        <ul className="list" >
-          <li className="delete-symbol" onClick={() => deleteHamster(hamster.id)}>❌</li>
+        <p className={hamster ? "" : "hide"}>{hamsterDeleted} </p>
+        <ul>
+          <li className="delete-symbol" onClick={() => deleteHamster(hamster.id)} >❌</li>
           <li>My Age: {hamster.age}</li>
           <li>My Favourite Food: {hamster.favFood}</li>
           <li>I Love : {hamster.loves}</li>
@@ -34,6 +36,7 @@ const Hamsters = ({ hamster }) => {
 
     const showImage = (
       <div>
+        
         <img
           src={`/assets/${hamster.imgName}`}
           alt={hamster.name}
@@ -42,9 +45,10 @@ const Hamsters = ({ hamster }) => {
     );
     return (
       <div onMouseEnter={changeSelect} onMouseLeave={changeSelect}>
-        {selectedItem ? <div className="name-img-header">{hamster.name}</div> : showImage}
+        {selectedItem || hamsterDeleted ? <div className="name-img-header">{hamster.name} </div> : showImage}
         <div>{selectedItem ? showHamsters : <span></span>}</div>
       </div>
+      
     );
   };
   export default Hamsters;
